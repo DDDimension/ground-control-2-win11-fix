@@ -1,0 +1,24 @@
+# DXVK binaries — do NOT commit these
+d3d9.dll
+dxgi.dll
+d3d8.dll
+d3d10core.dll
+d3d11.dll
+
+# Game files — never commit these
+gcii.exe
+GC2Launcher.exe
+*.sdf
+binkw32.dll
+mss32.dll
+goggame.dll
+
+# Local runtime output
+gcii_d3d9.log
+hardware_checks_output.txt
+profiles/
+replay/
+
+# Working files
+*.bak
+*.tmp
