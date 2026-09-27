@@ -25,7 +25,7 @@ d3d9.maxFrameRate = 60
 dxvk.tearFree = False
 
 # ---- swapchain / fullscreen ----
-dxvk.allowFse = True
+dxvk.allowFse = False
 d3d9.deferSurfaceCreation = False
 d3d9.lenientClear = True
 d3d9.maxFrameLatency = 0
@@ -59,7 +59,7 @@ d3d9.deviceLocalConstantBuffers = Auto
 | `d3d9.presentInterval = -1` | 立即呈现，避免帧率限制卡顿 | ❌ 关键 |
 | `d3d9.maxFrameRate = 60` | 限制 60 FPS（引擎不适配高帧） | 可调 |
 | `dxvk.tearFree = False` | 关闭防撕裂（本作会卡） | 建议保留 |
-| `dxvk.allowFse = True` | 允许独占全屏式呈现 | 建议保留 |
+| `dxvk.allowFse = False` | 用无边框全屏窗口模拟全屏（本作实测最稳的模式） | 建议保留 |
 | `d3d9.deferSurfaceCreation = False` | 立即创建表面 | 建议保留 |
 | `d3d9.lenientClear = True` | 宽松清除（老引擎兼容） | 建议保留 |
 | `d3d9.maxFrameLatency = 0` | 最多预渲染帧 | 建议保留 |
